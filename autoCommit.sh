@@ -6,6 +6,6 @@ cd "$SCRIPT_DIR" || exit
 
 # Execute Git commands
 git add .
-git commit -m "$(date '+%Y %m %d')"
+git commit -m "$(date '+%Y-%m-%d')"
 git push
 read
