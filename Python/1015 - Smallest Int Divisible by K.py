@@ -15,4 +15,3 @@ class Solution:
                 nLen += 1
                 n = (n * 10) + 1
         return -1 
-        
