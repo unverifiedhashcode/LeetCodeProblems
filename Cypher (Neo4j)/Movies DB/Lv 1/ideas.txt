@@ -1,0 +1,1 @@
+I should probably start off with simple stuff like relational arrows going in both releations. honestly 1a shouldn't have a where clause or distinct in it or order by. 1a has way too much rn
