@@ -8,7 +8,6 @@ class Solution:
                 vowelsSpotted.append(s[i])
                 vowelLocs.append(i)
         vowelsSpotted.sort()
-        #print(vowelsSpotted)
         sList = list(s)
         for i in range(len(vowelLocs)):
             sList[vowelLocs[i]] = vowelsSpotted[i]
