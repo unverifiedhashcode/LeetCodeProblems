@@ -1,0 +1,4 @@
+//Multi-Role: List individuals who both acted in and directed the same movie.
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(d:Person)
+  where p = d
+return p.name

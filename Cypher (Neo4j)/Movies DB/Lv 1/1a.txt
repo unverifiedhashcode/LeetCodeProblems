@@ -1,0 +1,8 @@
+/* 
+Direct Search: Find the actor named "Tom Cruise" and return all movie titles he acted in.
+Filtering: List all movies released in the 1990s, ordered by their release year (newest first).
+*/
+match (a:Person)-[ACTED_IN]->(m:Movie) //test
+where m.released > 1999
+return DISTINCT m.title
+  order BY m.title asc
