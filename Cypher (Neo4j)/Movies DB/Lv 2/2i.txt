@@ -1,0 +1,4 @@
+//Get every actor's first movie
+MATCH (a1:Person)-[:ACTED_IN]->(m:Movie)
+  with a1, min(m.released) as debutYear
+return a1.name, debutYear

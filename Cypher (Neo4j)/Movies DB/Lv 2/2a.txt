@@ -1,5 +1,5 @@
 /*
 Co-occurrence: Find all actors who acted in the same movie as "Kevin Bacon" (the "Bacon's Neighbors" query).
 */
-MATCH (kevin:Person {name:"Kevin Bacon"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(coKevin:Person)
-return coKevin.name
+match (kevin:Person{name:"Kevin Bacon"})-[:ACTED_IN*1..2]-(costar:Person)
+return DISTINCT costar.name

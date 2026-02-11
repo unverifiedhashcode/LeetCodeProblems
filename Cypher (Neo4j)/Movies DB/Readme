@@ -5,10 +5,19 @@ Level 2: Relationships & Filtering
 	a) Co-occurrence: Find Co-Actors.
 	b) Multi-Role: List individuals who both acted in and directed the same movie.
 	c) Exclusive Filtering: Find all people who have directed a movie but have never acted in any movie.
+	d) Co-occurrence: Find all actors within 3 degrees of Kevin Bacon. 
+	e) Prolific Colleague: Find actors who appeared in more than 2 movies with the same director. 
+	f) Cross-Genre Connectivity: List actors who acted in films released in 1999 and 2000 
+	g) Collaborators: Find people who acted in a movie released after 2000 directed by "James Marshall"
+	h) The "Pure" Actor: Find actors who have acted but not directed movies
+	i) Get every actor's first movie
+	
 Level 3: Aggregation & Logic
-	Top Performers: Return the top 5 actors who have appeared in the highest number of movies, including their movie count.
-	Collaborators: For a specific actor (e.g., "Tom Hanks"), find their most frequent collaborators (actors they've worked with more than once).
-	Graph Breadth: Find all people within two degrees of separation from "Keanu Reeves" (exclude Keanu himself).
+	a) Top Performers: Return the top 5 actors who have appeared in the highest number of movies, including their movie count.
+	b) Collaborators: For a specific actor (e.g., "Tom Hanks"), find their most frequent collaborators (actors they've worked with more than once).
+	c) The "Purest" Actors: Find actors who have ONLY acted. Assume that the database relationships may fluxuate, so you cannot simply use "Not Directed" logic
+	d) Shared Debut: Find pairs of actors whose first movie was the same film.
+	
 Level 4: Complex Paths & Cleanup
-	Shortest Path: Find the shortest path of relationships between "Tom Cruise" and "Hugo Weaving."
-	Refactoring: Write a query to find a movie titled "The Matrix," change its tagline property to "Welcome to the Real World," and return the updated node.
+	a) Shortest Path: Find the shortest path of relationships between "Tom Cruise" and "Hugo Weaving."
+	b) Refactoring: Write a query to find a movie titled "The Matrix," change its tagline property to "Welcome to the Real World," and return the updated node.

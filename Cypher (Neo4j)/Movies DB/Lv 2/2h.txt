@@ -1,0 +1,4 @@
+//h) The "Pure" Actor: Find actors who have acted but not directed movies
+MATCH (a:Person)-[:ACTED_IN]->(:Movie)
+  where not (a)-[:DIRECTED]->(:Movie)
+return a.name

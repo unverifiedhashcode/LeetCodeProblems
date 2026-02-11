@@ -1,0 +1,5 @@
+//Exclusive Filtering: Find all people who have directed a movie but have never acted in any movie.
+match (p:Person)-[:DIRECTED]->(:Movie)
+  WHERE NOT (p)-[:ACTED_IN]->(:Movie)
+return DISTINCT p.name
+limit 10

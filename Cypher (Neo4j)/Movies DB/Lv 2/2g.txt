@@ -1,0 +1,4 @@
+//	g) Collaborators: Find people who acted in a movie released after 2000 directed by "James Marshall"
+MATCH (d:Person{name:"James Marshall"})-[:DIRECTED]->(m:Movie)<-[:ACTED_IN]-(a:Person)
+  WHERE m.released > 2000
+  return m.title, a.name

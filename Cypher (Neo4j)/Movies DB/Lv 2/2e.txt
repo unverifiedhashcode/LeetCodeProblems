@@ -1,0 +1,5 @@
+//e) Prolific Colleague: Find actors who appeared in more than 3 movies with the same director. 
+match (p:Person {name:"Lana Wachowski"})-[:DIRECTED]->(m:Movie)<-[:ACTED_IN]-(a:Person)
+  with a, count(a) as occurences
+  where occurences > 2
+  return a.name, occurences
