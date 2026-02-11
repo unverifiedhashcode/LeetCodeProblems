@@ -1,0 +1,3 @@
+//	d) Co-occurrence: Find all actors within 3 degrees of Keanu Reeves. Look into DISTINCT!
+MATCH (a:Person{name:"Keanu Reeves"})-[:ACTED_IN*1..6]-(p:Person) //note we use 6 because 1 degree is 2 hops!!
+return distinct p.name

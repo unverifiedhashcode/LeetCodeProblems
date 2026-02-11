@@ -2,11 +2,11 @@ Level 1: Basic Retrieval
 	a) Find an actor and all movies they acted in that were released before a date.
 	b) 
 Level 2: Relationships & Filtering
-	a) Co-occurrence: Find Co-Actors.
+	a) Co-occurrence: Find all actors who acted in the same movie as "Kevin Bacon" (the "Bacon's Neighbors" query).
 	b) Multi-Role: List individuals who both acted in and directed the same movie.
 	c) Exclusive Filtering: Find all people who have directed a movie but have never acted in any movie.
-	d) Co-occurrence: Find all actors within 3 degrees of Kevin Bacon. 
 	e) Prolific Colleague: Find actors who appeared in more than 2 movies with the same director. 
+	d) Co-occurrence: Find all actors within 3 degrees of Keanu Reeves. Look into DISTINCT! 
 	f) Cross-Genre Connectivity: List actors who acted in films released in 1999 and 2000 
 	g) Collaborators: Find people who acted in a movie released after 2000 directed by "James Marshall"
 	h) The "Pure" Actor: Find actors who have acted but not directed movies
@@ -17,6 +17,14 @@ Level 3: Aggregation & Logic
 	b) Collaborators: For a specific actor (e.g., "Tom Hanks"), find their most frequent collaborators (actors they've worked with more than once).
 	c) The "Purest" Actors: Find actors who have ONLY acted. Assume that the database relationships may fluxuate, so you cannot simply use "Not Directed" logic
 	d) Shared Debut: Find pairs of actors whose first movie was the same film.
+	
+Level 3.5: Specific Clauses
+	a) SKIP
+	b) FINISH
+	c) FOREACH
+	d) UNWIND
+	e) COLLECT
+	f) EXISTS
 	
 Level 4: Complex Paths & Cleanup
 	a) Shortest Path: Find the shortest path of relationships between "Tom Cruise" and "Hugo Weaving."

@@ -1,0 +1,6 @@
+//b) Collaborators: For a specific actor (e.g., "Tom Hanks"), find their most frequent collaborators (actors they've worked with more than once).
+MATCH (colab:Person)-[:ACTED_IN]->(:Movie) <- [:ACTED_IN]-(tom:Person{name:"Tom Hanks"})
+  with colab, count(colab) as movieCount
+  where movieCount > 1
+order by movieCount DESC
+return colab.name, movieCount

@@ -1,0 +1,6 @@
+//	a) Top Performers: Return the top 5 actors who have appeared in the highest number of movies, including their movie count.
+MATCH (a:Person) - [:ACTED_IN] -> (:Movie)
+  with a,count(a) as movieCount
+  order by movieCount DESC
+limit 5
+return a.name, movieCount

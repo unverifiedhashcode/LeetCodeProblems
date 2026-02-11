@@ -1,0 +1,6 @@
+//c) The "Purest" Actors: Find actors who have ONLY acted. Assume that the database relationships may fluxuate, so you cannot simply use "Not Directed" logic. Order by the number of movies they have acted in, most to least
+match (a:Person)-[:ACTED_IN]->(:Movie)
+  with a, count(*) as actings,  COUNT{(a)-[]->()} as totalRelations
+  where actings = totalRelations
+  order by actings desc
+return a.name, actings,totalRelations
