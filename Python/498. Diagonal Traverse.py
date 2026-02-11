@@ -1,4 +1,5 @@
 #While this isn't the prettiest solution visually and it's a bit nest heavy, it's O(n) which is much more important for the purpose of this exercise.
+#If I were to change this, I would probably rewrite the conditions of the 2-nested if/else, but honestly this is rather intuitive and readable so I shall not. 
 class Solution(object):
     def findDiagonalOrder(self, mat):
         """
