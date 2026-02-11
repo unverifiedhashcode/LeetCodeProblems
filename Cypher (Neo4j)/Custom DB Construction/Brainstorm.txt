@@ -1,0 +1,7 @@
+Load CSV to create a database
+transaction creation/termination
+creating functions and procedures
+	showing/listing functions, procedures, settings, transactions
+
+
+Another section entirely for utilizing the complex mathematical functions
