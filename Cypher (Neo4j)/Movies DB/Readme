@@ -1,0 +1,14 @@
+Level 1: Basic Retrieval
+	a) Find an actor and all movies they acted in that were released before a date.
+	b) 
+Level 2: Relationships & Filtering
+	a) Co-occurrence: Find Co-Actors.
+	b) Multi-Role: List individuals who both acted in and directed the same movie.
+	c) Exclusive Filtering: Find all people who have directed a movie but have never acted in any movie.
+Level 3: Aggregation & Logic
+	Top Performers: Return the top 5 actors who have appeared in the highest number of movies, including their movie count.
+	Collaborators: For a specific actor (e.g., "Tom Hanks"), find their most frequent collaborators (actors they've worked with more than once).
+	Graph Breadth: Find all people within two degrees of separation from "Keanu Reeves" (exclude Keanu himself).
+Level 4: Complex Paths & Cleanup
+	Shortest Path: Find the shortest path of relationships between "Tom Cruise" and "Hugo Weaving."
+	Refactoring: Write a query to find a movie titled "The Matrix," change its tagline property to "Welcome to the Real World," and return the updated node.
