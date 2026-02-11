@@ -1,2 +1,2 @@
 *.bak
-*.sh #ignore my bash script to autoformat the commit message
+*.sh 
